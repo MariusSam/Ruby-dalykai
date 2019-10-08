@@ -1,0 +1,38 @@
+class Pirms
+  def self.add(a, b)
+    puts(a + b)
+  end
+
+  def self.subtract(a, b)
+    puts(a - b)
+  end
+
+end
+puts('pirms xD')
+Pirms.add(2, 3)
+Pirms.subtract(7, 5)
+
+class Second
+  def self.random_select(array, n)
+    result = []
+    n.times do 
+      result << array[rand(array.length)]
+    end
+    puts(result)
+  end
+end
+
+puts('antrs xD')
+array = [1,2,3,4,5]
+Second.random_select(array, 2)
+
+class Trecias
+  def self.length_finder(input_array)
+    answer = input_array.map {|element| element.length}
+    puts(answer)
+  end
+end
+puts('Trecias xD')
+
+Trecias.length_finder(['Zodis', 'nebeprisikiskiakopusteliaudavome'])
+
